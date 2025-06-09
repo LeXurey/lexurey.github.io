@@ -17,7 +17,7 @@ Lecturer at UNSW and expert in formal verification and fuzz testing. Leads the r
 Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
 
 ### [Jiahao Zhang – Technical Consultant](https://www.linkedin.com/in/jiahao-zhang-878a632b6/)
-<img src="jiahao.jpeg" alt="Ziqi Ding" width="150" style="border-radius: 8px;" />  
+<img src="jiahao.jpeg" alt="Jiahao Zhang" width="150" style="border-radius: 8px;" />  
 Specializes in cloud-based ERP development and cross-platform integration. At LeXurey, Jiahao supports technical delivery across Business Central extensions, API automation, and sustainability module implementations.
 
 ### [Ziqi Ding – Security Researcher](https://www.linkedin.com/in/ziqi-ding-38353a327/)  
