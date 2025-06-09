@@ -1,23 +1,23 @@
 ## 👥 Who We Are
 
 ### [Pei Xu – CoFounder & CEO](https://www.linkedin.com/in/talbenxu/)  
-[Pei Xu](https://media.licdn.com/dms/image/v2/C5103AQF8jlM6eLFOGQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1552867482645?e=1755129600&v=beta&t=33sHInTDrsNBmjqssyJzf-PJgjsLVSShxVwVxsf60qI)
+![Pei Xu](https://media.licdn.com/dms/image/v2/C5103AQF8jlM6eLFOGQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1552867482645?e=1755129600&v=beta&t=33sHInTDrsNBmjqssyJzf-PJgjsLVSShxVwVxsf60qI)
 Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
 
 ### 【Joe Cardinale – ERP Senior Advisor](https://media.licdn.com/dms/image/v2/C4D03AQHB0tuG5camVQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516770850917?e=1755129600&v=beta&t=h_UosJj4bpQqO_8bxANswdn_F5c5Loni5K0DAVhoNLI)  
-[Joe Cardinale](https://media.licdn.com/dms/image/v2/C4D03AQHB0tuG5camVQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516770850917?e=1755129600&v=beta&t=h_UosJj4bpQqO_8bxANswdn_F5c5Loni5K0DAVhoNLI)
+![Joe Cardinale](https://media.licdn.com/dms/image/v2/C4D03AQHB0tuG5camVQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516770850917?e=1755129600&v=beta&t=h_UosJj4bpQqO_8bxANswdn_F5c5Loni5K0DAVhoNLI)
 Decades of experience guiding ERP rollouts in complex industries. Advises LeXurey on architecture, delivery models, and industry partnerships.
 
 ### [Dr. Yuekang Li – Web3 Security Advisor](https://www.linkedin.com/in/yuekang-li-9a890b68/)
-[Yuekang Li](https://media.licdn.com/dms/image/v2/C5603AQGDVDTXEdlxCA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517405520880?e=1755129600&v=beta&t=6mvcADfRhixqfXirSIycBrjw72NqxpUcUShHKOQJmV4)
+![Yuekang Li](https://media.licdn.com/dms/image/v2/C5603AQGDVDTXEdlxCA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517405520880?e=1755129600&v=beta&t=6mvcADfRhixqfXirSIycBrjw72NqxpUcUShHKOQJmV4)
 Lecture at UNSW and expert in formal verification and fuzz testing. Leads the research behind LeXurey's smart contract assurance pipeline.
 
 ### [Yang Yu – CoFounder & Chief Operating Officer](https://www.linkedin.com/in/brandon-yang-yu/)    
-[Yang Yu](https://media.licdn.com/dms/image/v2/C4E03AQEFBmDwdo6YQg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1597235092787?e=1755129600&v=beta&t=4xqaW59UOzkXf56_3KJ81x6niB48vCIKF8VZUFjfz3Y)
+![Yang Yu](https://media.licdn.com/dms/image/v2/C4E03AQEFBmDwdo6YQg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1597235092787?e=1755129600&v=beta&t=4xqaW59UOzkXf56_3KJ81x6niB48vCIKF8VZUFjfz3Y)
 Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
 
 ### [Ziqi Ding – Security Researcher](https://www.linkedin.com/in/ziqi-ding-38353a327/)  
-[Ziqi Ding](https://media.licdn.com/dms/image/v2/D5603AQG75YoBdiNuYg/profile-displayphoto-shrink_800_800/B56ZYLjLN2GsAc-/0/1743950493850?e=1755129600&v=beta&t=d8pxPaxDruuYLGlXRUCfTwk-CQvTtAOmzIUQxcpMmQY)
+![Ziqi Ding](https://media.licdn.com/dms/image/v2/D5603AQG75YoBdiNuYg/profile-displayphoto-shrink_800_800/B56ZYLjLN2GsAc-/0/1743950493850?e=1755129600&v=beta&t=d8pxPaxDruuYLGlXRUCfTwk-CQvTtAOmzIUQxcpMmQY)
 Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
 
 ---
