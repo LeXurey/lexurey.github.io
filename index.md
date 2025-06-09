@@ -1,9 +1,3 @@
-# LeXurey
-
-**Let Us Extend the Future for You**  
-
-**A future with clean air and fresh water, where everyone contributes equally to protecting the environment.**
-
 ## 👥 Who We Are
 
 ### [Pei Xu – CoFounder & CEO](https://www.linkedin.com/in/talbenxu/)  
