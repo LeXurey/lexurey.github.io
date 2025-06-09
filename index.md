@@ -23,8 +23,8 @@ Lecture at UNSW and expert in formal verification and fuzz testing. Leads the re
 [LinkedIn](https://www.linkedin.com/in/brandon-yang-yu/)  
 Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
 
-### Ziqi Ding – Security Researcher  
-[![Ziqi Ding](https://media.licdn.com/dms/image/v2/D5603AQG75YoBdiNuYg/profile-displayphoto-shrink_800_800/B56ZYLjLN2GsAc-/0/1743950493850?e=1755129600&v=beta&t=d8pxPaxDruuYLGlXRUCfTwk-CQvTtAOmzIUQxcpMmQY)](https://www.linkedin.com/in/ziqi-ding-38353a327/)  
+### [Ziqi Ding – Security Researcher](https://www.linkedin.com/in/ziqi-ding-38353a327/)  
+[![Ziqi Ding](https://media.licdn.com/dms/image/v2/D5603AQG75YoBdiNuYg/profile-displayphoto-shrink_800_800/B56ZYLjLN2GsAc-/0/1743950493850?e=1755129600&v=beta&t=d8pxPaxDruuYLGlXRUCfTwk-CQvTtAOmzIUQxcpMmQY)]
 Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
 
 ---
