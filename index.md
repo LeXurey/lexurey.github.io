@@ -1,7 +1,30 @@
 # LeXurey
 
 **Let Us Extend the Future for You**  
-*ERP | ESG | Smart Contracts | Blockchain Innovation*
+
+**A future with clean air and fresh water, where everyone contributes equally to protecting the environment.**
+
+## 👥 Who We Are
+
+### Pei Xu – Founder & CEO  
+[LinkedIn](https://www.linkedin.com/in/talbenxu/)  
+Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
+
+### Joe Cardinale – ERP Senior Advisor  
+[LinkedIn](https://www.linkedin.com/in/joecardinale/)  
+Decades of experience guiding ERP rollouts in complex industries. Advises LeXurey on architecture, delivery models, and industry partnerships.
+
+### Dr. Yuekang Li – Web3 Security Advisor  
+[LinkedIn](https://www.linkedin.com/in/yuekang-li-9a890b68/)  
+Lecture at UNSW and expert in formal verification and fuzz testing. Leads the research behind LeXurey's smart contract assurance pipeline.
+
+### Yang Yu – Chief Operating Officer  
+[LinkedIn](https://www.linkedin.com/in/brandon-yang-yu/)  
+Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
+
+### Ziqi Ding – Security Researcher  
+[LinkedIn](https://www.linkedin.com/in/ziqi-ding-38353a327/)  
+Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
 
 ---
 
@@ -14,7 +37,7 @@ ERP implementation is at the heart of our operations. We deliver industry-standa
 We have deep experience in the **food distribution sector**, having worked with:
 - Members of the **Countrywide Group**, one of Australia’s largest foodservice buying groups.
 - Distributors for major retailers like **Coles**, **Woolworths**, and **IGA (Metcash)**.
-- Leading dairy brands like **Saputo** and **Lactalis**.
+- Connect local businesss with Leading dairy brands like **Saputo** and **Lactalis**.
 
 Our integrations include:
 - **Xero**, **Power BI**, **Tableau**
@@ -42,30 +65,6 @@ We empower businesses to gain regulatory trust and sustainability benefits throu
 
 ---
 
-## 👥 Who We Are
-
-### Pei Xu – Founder & CEO  
-[LinkedIn](https://www.linkedin.com/in/talbenxu/)  
-Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
-
-### Joe Cardinale – ERP Senior Advisor  
-LinkedIn (Coming Soon)  
-Decades of experience guiding ERP rollouts in complex industries. Advises LeXurey on architecture, delivery models, and industry partnerships.
-
-### Dr. Yuekang Li – Web3 Security Advisor  
-LinkedIn (Coming Soon)  
-Associate Professor at UNSW and expert in formal verification and fuzz testing. Leads the research behind LeXurey's smart contract assurance pipeline.
-
-### Yang Yu – Chief Operating Officer  
-LinkedIn (Coming Soon)  
-Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
-
-### Ziqi Ding – Security Researcher  
-LinkedIn (Coming Soon)  
-Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
-
----
-
 ## 🔭 Our Vision
 
 We aim to build a world where **business trust, environmental integrity, and operational transparency** converge through blockchain-integrated ERP systems.
@@ -74,7 +73,7 @@ We aim to build a world where **business trust, environmental integrity, and ope
 
 ## 🧩 What We Do
 
-- **ERP Implementation & Blockchain Integration**
+- **ERP Implementation & Integration**
 - **Carbon Credit Lifecycle Automation (ZKP-backed)**
 - **ESG Compliance & Reporting Frameworks**
 - **Smart Contract Auditing & Security Tools**
@@ -95,7 +94,7 @@ We aim to build a world where **business trust, environmental integrity, and ope
 1. How can ZKPs integrate seamlessly into ERP systems?
 2. What architecture ensures secure, real-time data flow between ERP and blockchain?
 3. How can we optimize ZKP throughput while preserving privacy?
-4. How can profit-centric fuzzing detect high-impact bugs before production?
+4. How can fuzzing detect high-impact bugs before production?
 5. How do we enforce compliance under shifting ESG standards without revealing sensitive data?
 
 ---
@@ -112,6 +111,7 @@ We are building a **Blockchain-Integrated ERP Extension** that:
 
 ## 🔄 Action in Progress
 
+- 7 Local food distributor implement agreement archieve - 06/06/205
 - Circom/zkSolc-based smart contract construction
 - ZKP-aware source mapping and fuzzing tools
 - Middleware connector for ERP data integration
