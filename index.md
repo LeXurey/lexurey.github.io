@@ -107,7 +107,7 @@ We are building a **Blockchain-Integrated ERP Extension** that:
 
 ## 🔄 Action in Progress
 
-- 7 Local food distributor implement agreement archieve - 06/06/2025
+- Implementation agreements finalized with 7 local food distributors (as of 06/06/2025)
 - Circom/zkSolc-based smart contract construction
 - ZKP-aware source mapping and fuzzing tools
 - Middleware connector for ERP data integration
@@ -135,7 +135,7 @@ We are building a **Blockchain-Integrated ERP Extension** that:
 ## 📩 Contact Us
 
 Pei Xu – Director  
-📧 info@lexurey.com  
+📧 admin@lexurey.com  
 🌐 [https://lexurey.com](https://lexurey.com)  
 🔗 GitHub: [github.com/lexurey](https://github.com/lexurey)
 
