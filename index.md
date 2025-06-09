@@ -6,7 +6,8 @@
 
 ## 👥 Who We Are
 
-### Pei Xu – Founder & CEO  
+### Pei Xu – CoFounder & CEO  
+[![Pei Xu](images/peixu.png)]
 [LinkedIn](https://www.linkedin.com/in/talbenxu/)  
 Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
 
@@ -18,12 +19,12 @@ Decades of experience guiding ERP rollouts in complex industries. Advises LeXure
 [LinkedIn](https://www.linkedin.com/in/yuekang-li-9a890b68/)  
 Lecture at UNSW and expert in formal verification and fuzz testing. Leads the research behind LeXurey's smart contract assurance pipeline.
 
-### Yang Yu – Chief Operating Officer  
+### Yang Yu – CoFounder & Chief Operating Officer  
 [LinkedIn](https://www.linkedin.com/in/brandon-yang-yu/)  
 Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
 
 ### Ziqi Ding – Security Researcher  
-[LinkedIn](https://www.linkedin.com/in/ziqi-ding-38353a327/)  
+[![Ziqi Ding](https://media.licdn.com/dms/image/v2/D5603AQG75YoBdiNuYg/profile-displayphoto-shrink_800_800/B56ZYLjLN2GsAc-/0/1743950493850?e=1755129600&v=beta&t=d8pxPaxDruuYLGlXRUCfTwk-CQvTtAOmzIUQxcpMmQY)](https://www.linkedin.com/in/ziqi-ding-38353a327/)  
 Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
 
 ---
