@@ -1,83 +1,138 @@
 # LeXurey
 
 **Let Us Extend the Future for You**  
-*Blockchain • ERP • ESG • Smart Contracts*
+*ERP | ESG | Smart Contracts | Blockchain Innovation*
+
+---
+
+## 💼 What We’re Capable Of
+
+### 1. ERP – The Cornerstone of Our Services
+
+ERP implementation is at the heart of our operations. We deliver industry-standard solutions across a wide range of sectors, focusing on **cost-efficiency without compromising quality**. Our smart resource integration allows us to provide **premium results at accessible pricing**—contact us to learn how we do it.
+
+We have deep experience in the **food distribution sector**, having worked with:
+- Members of the **Countrywide Group**, one of Australia’s largest foodservice buying groups.
+- Distributors for major retailers like **Coles**, **Woolworths**, and **IGA (Metcash)**.
+- Leading dairy brands like **Saputo** and **Lactalis**.
+
+Our integrations include:
+- **Xero**, **Power BI**, **Tableau**
+- **Tasklet scanner modules**, **iPad webstore systems**, and custom dashboards
+- Specialized functions: pantry tracking, purchase/sales forecasting, cartage automation, and more
+
+Through proper project management and extensive experience, we ensure **smooth transitions from legacy to leading-edge systems**—complete with capped pricing, automated test packages, and live UAT environments.
+
+Our clients benefit from **future-ready innovations**, including dynamic carbon credit modules and free lifetime code updates (excluding installation & service fees).
+
+---
+
+### 2. ESG – Verified, Automated, and Trustworthy
+
+LeXurey is developing **zero-knowledge proof (ZKP)** based tools that automatically verify ESG compliance—without revealing sensitive internal data.
+
+Current ESG solutions vary greatly across institutions, leading to fragmented standards and unverifiable impact claims. Fraud and misreporting remain persistent risks.
+
+Our solution combines **Web3 transparency with ZKP security**, enabling:
+- Universal APIs to upload and cryptographically verify ESG data
+- Instant proof validation — where **everyone becomes the auditor**
+- Easy integration without the need for expensive system overhauls
+
+We empower businesses to gain regulatory trust and sustainability benefits through **tamper-proof ESG reporting**.
+
+---
+
+## 👥 Who We Are
+
+### Pei Xu – Founder & CEO  
+[LinkedIn](https://www.linkedin.com/in/talbenxu/)  
+Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
+
+### Joe Cardinale – ERP Senior Advisor  
+LinkedIn (Coming Soon)  
+Decades of experience guiding ERP rollouts in complex industries. Advises LeXurey on architecture, delivery models, and industry partnerships.
+
+### Dr. Yuekang Li – Web3 Security Advisor  
+LinkedIn (Coming Soon)  
+Associate Professor at UNSW and expert in formal verification and fuzz testing. Leads the research behind LeXurey's smart contract assurance pipeline.
+
+### Yang Yu – Chief Operating Officer  
+LinkedIn (Coming Soon)  
+Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
+
+### Ziqi Ding – Security Researcher  
+LinkedIn (Coming Soon)  
+Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
 
 ---
 
 ## 🔭 Our Vision
 
-At LeXurey, we are building a future where **enterprise trust, environmental accountability, and operational transparency** converge through blockchain-integrated ERP systems.
-
-We are committed to pioneering solutions that:
-- Automate ESG compliance
-- Ensure verifiable carbon credit integrity
-- Embed zero-knowledge privacy into real-world business workflows
+We aim to build a world where **business trust, environmental integrity, and operational transparency** converge through blockchain-integrated ERP systems.
 
 ---
 
 ## 🧩 What We Do
 
 - **ERP Implementation & Blockchain Integration**
-- **ZKP-based Carbon Credit Lifecycle Tools**
-- **ESG & Sustainability Reporting Automation**
-- **Smart Contract Security and Source Mapping**
-- **Compliance Toolkits & Open-Source Libraries**
+- **Carbon Credit Lifecycle Automation (ZKP-backed)**
+- **ESG Compliance & Reporting Frameworks**
+- **Smart Contract Auditing & Security Tools**
+- **Open-Source Libraries & Universal Middleware**
 
 ---
 
 ## 🚀 What Makes LeXurey Capable
 
-- **Technical Depth**: Advanced research and development in zero-knowledge proof (ZKP) smart contracts, static analysis, and ERP interoperability.
-- **Enterprise Experience**: Hands-on delivery of middleware and system integration for Microsoft Dynamics 365 Business Central and NetSuite.
-- **Security-first Design**: Custom profit-centric fuzzing pipelines that detect logic vulnerabilities before deployment.
+- **Research Depth**: Advanced expertise in ZKPs, fuzz testing, and smart contract analysis  
+- **Delivery Experience**: ERP + Blockchain deployments for mission-critical workflows  
+- **Security Focus**: Profit-driven vulnerability discovery and mitigation pipelines
 
 ---
 
 ## 🎯 Research Questions Driving Our Innovation
 
-1. How can ZKPs be integrated into ERP workflows for cost-efficient, scalable carbon-credit issuance?
-2. What architectural designs ensure secure, real-time blockchain↔ERP data exchange?
-3. Which ZKP schemes and optimizations offer high-throughput, privacy-preserving proofs?
-4. How can adversarial testing expose hidden vulnerabilities in smart contracts?
-5. How can evolving ESG standards be enforced through privacy-preserving verification?
+1. How can ZKPs integrate seamlessly into ERP systems?
+2. What architecture ensures secure, real-time data flow between ERP and blockchain?
+3. How can we optimize ZKP throughput while preserving privacy?
+4. How can profit-centric fuzzing detect high-impact bugs before production?
+5. How do we enforce compliance under shifting ESG standards without revealing sensitive data?
 
 ---
 
 ## 🛠️ Our Solution
 
-We are developing a **Blockchain-Integrated ERP Extension** that:
-- Automatically generates verifiable ZKP-based carbon credit records
-- Publishes proofs to blockchain without exposing sensitive enterprise data
-- Aligns with major ESG frameworks and privacy regulations (VCS, GDPR, etc.)
-- Offers plug-and-play integration with Business Central and NetSuite
+We are building a **Blockchain-Integrated ERP Extension** that:
+- Issues verifiable carbon credits using ZKPs
+- Publishes compliance proofs to blockchain securely
+- Offers plug-and-play compatibility with Business Central and NetSuite
+- Enables enterprise-grade ESG auditability
 
 ---
 
 ## 🔄 Action in Progress
 
-- Building smart contracts with zkSolc and Circom
-- Designing source-mapped tooling for smart contract analysis
-- Developing middleware to connect ERP data with blockchain ZKP layers
-- Running pilot tests with enterprise clients
-- Preparing an open-source ESG Compliance Toolkit
+- Circom/zkSolc-based smart contract construction
+- ZKP-aware source mapping and fuzzing tools
+- Middleware connector for ERP data integration
+- Pilot implementations with SME partners
+- ESG Toolkit (open-source) under development
 
 ---
 
 ## 🤝 Partnerships
 
-- **UNSW Sydney** – Academic co-lead (Prof. Yuekang Li), formal methods & fuzz testing
-- **DFCRC** – Doctoral collaboration & applied research platform
-- **Clients** – Small and medium enterprises with carbon credit issuance needs
+- **Compusoft Australia** – [Gold Microsoft Partner](https://compusoftaus.com.au/), and one of Australia’s most established ERP solution providers.  
+  LeXurey and Compusoft share a long-term strategic partnership, committed to delivering **fast, high-quality, and highly affordable** tailored ERP solutions across industries. Together, we combine deep technical capability with implementation agility to help your business scale with confidence.
 
 ---
 
-## ⚠️ Limitations We’re Tackling
+## ⚠️ Challenges We Tackle
 
-- Complexity of integrating zero-knowledge proofs into legacy ERP systems
-- Performance trade-offs in large-scale carbon-credit verification
-- Ensuring compliance without compromising data privacy
-- Building trust in emerging ESG technology ecosystems
+- ZKP complexity in enterprise environments
+- Diverse ESG frameworks with inconsistent reporting logic
+- Balancing transparency with data privacy
+- Reinforcing public and institutional trust in carbon markets
 
 ---
 
