@@ -1,29 +1,37 @@
 ## 👥 Who We Are
 
-### [Pei Xu – CoFounder & CEO](https://www.linkedin.com/in/talbenxu/)  
-<img src="pei.jpeg" alt="Pei Xu" width="150" style="border-radius: 8px;" />  
-Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
-
-### [Joe Cardinale – ERP Senior Advisor](https://www.linkedin.com/in/joecardinale/)  
-<img src="joe.jpeg" alt="Joe Cardinale" width="150" style="border-radius: 8px;" />  
-Decades of experience guiding ERP rollouts in complex industries. Advises LeXurey on architecture, delivery models, and industry partnerships.
-
-### [Dr. Yuekang Li – Web3 Security Advisor](https://www.linkedin.com/in/yuekang-li-9a890b68/)  
-<img src="yuekang.jpeg" alt="Yuekang Li" width="150" style="border-radius: 8px;" />  
-Lecturer at UNSW and expert in formal verification and fuzz testing. Leads the research behind LeXurey's smart contract assurance pipeline.
-
-### [Yang Yu – CoFounder & Chief Operating Officer](https://www.linkedin.com/in/brandon-yang-yu/)  
-<img src="yang.jpeg" alt="Yang Yu" width="150" style="border-radius: 8px;" />  
-Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
-
-### [Jiahao Zhang – Technical Consultant](https://www.linkedin.com/in/jiahao-zhang-878a632b6/)
-<img src="jiahao.jpg" alt="Jiahao Zhang" width="150" style="border-radius: 8px;" />  
-Specializes in cloud-based ERP development and cross-platform integration. At LeXurey, Jiahao supports technical delivery across Business Central extensions, API automation, and sustainability module implementations.
-
-### [Ziqi Ding – Security Researcher](https://www.linkedin.com/in/ziqi-ding-38353a327/)  
-<img src="ziqi.jpeg" alt="Ziqi Ding" width="150" style="border-radius: 8px;" />  
-Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
-
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/talbenxu/"><img src="pei.jpeg" alt="Pei Xu" width="150" style="border-radius: 8px;" /><br><strong>Pei Xu</strong><br>CoFounder & CEO</a><br>
+      Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/brandon-yang-yu/"><img src="yang.jpeg" alt="Yang Yu" width="150" style="border-radius: 8px;" /><br><strong>Yang Yu</strong><br>CoFounder & COO</a><br>
+      Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/joecardinale/"><img src="joe.jpeg" alt="Joe Cardinale" width="150" style="border-radius: 8px;" /><br><strong>Joe Cardinale</strong><br>ERP Senior Advisor</a><br>
+      Decades of experience guiding ERP rollouts in complex industries. Advises LeXurey on architecture, delivery models, and industry partnerships.
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/yuekang-li-9a890b68/"><img src="yuekang.jpeg" alt="Yuekang Li" width="150" style="border-radius: 8px;" /><br><strong>Dr. Yuekang Li</strong><br>Web3 Security Advisor</a><br>
+      Lecturer at UNSW and expert in formal verification and fuzz testing. Leads the research behind LeXurey's smart contract assurance pipeline.
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/jiahao-zhang-878a632b6/"><img src="jiahao.jpg" alt="Jiahao Zhang" width="150" style="border-radius: 8px;" /><br><strong>Jiahao Zhang</strong><br>Technical Consultant</a><br>
+      Supports cross-platform ERP development, Power Platform integration, and ESG-focused implementation across food and logistics clients.
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/ziqi-ding-38353a327/"><img src="ziqi.jpeg" alt="Ziqi Ding" width="150" style="border-radius: 8px;" /><br><strong>Ziqi Ding</strong><br>Security Researcher</a><br>
+      Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
+    </td>
+  </tr>
+</table>
 
 
 ---
