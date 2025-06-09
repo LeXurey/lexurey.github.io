@@ -105,7 +105,7 @@ We are building a **Blockchain-Integrated ERP Extension** that:
 
 ## 🔄 Action in Progress
 
-- 7 Local food distributor implement agreement archieve - 06/06/205
+- 7 Local food distributor implement agreement archieve - 06/06/2025
 - Circom/zkSolc-based smart contract construction
 - ZKP-aware source mapping and fuzzing tools
 - Middleware connector for ERP data integration
