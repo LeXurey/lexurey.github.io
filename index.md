@@ -1,37 +1,38 @@
 ## 👥 Who We Are
 
-<table>
+<table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center">
+    <td style="border: none; padding: 20px;" align="center" valign="top">
       <a href="https://www.linkedin.com/in/talbenxu/"><img src="pei.jpeg" alt="Pei Xu" width="150" style="border-radius: 8px;" /><br><strong>Pei Xu</strong><br>CoFounder & CEO</a><br>
       Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
     </td>
-    <td align="center">
+    <td style="border: none; padding: 20px;" align="center" valign="top">
       <a href="https://www.linkedin.com/in/brandon-yang-yu/"><img src="yang.jpeg" alt="Yang Yu" width="150" style="border-radius: 8px;" /><br><strong>Yang Yu</strong><br>CoFounder & COO</a><br>
       Responsible for solution delivery and systems engineering. Oversees cross-platform implementation and client satisfaction.
     </td>
   </tr>
   <tr>
-    <td align="center">
+    <td style="border: none; padding: 20px;" align="center" valign="top">
       <a href="https://www.linkedin.com/in/joecardinale/"><img src="joe.jpeg" alt="Joe Cardinale" width="150" style="border-radius: 8px;" /><br><strong>Joe Cardinale</strong><br>ERP Senior Advisor</a><br>
       Decades of experience guiding ERP rollouts in complex industries. Advises LeXurey on architecture, delivery models, and industry partnerships.
     </td>
-    <td align="center">
+    <td style="border: none; padding: 20px;" align="center" valign="top">
       <a href="https://www.linkedin.com/in/yuekang-li-9a890b68/"><img src="yuekang.jpeg" alt="Yuekang Li" width="150" style="border-radius: 8px;" /><br><strong>Dr. Yuekang Li</strong><br>Web3 Security Advisor</a><br>
       Lecturer at UNSW and expert in formal verification and fuzz testing. Leads the research behind LeXurey's smart contract assurance pipeline.
     </td>
   </tr>
   <tr>
-    <td align="center">
+    <td style="border: none; padding: 20px;" align="center" valign="top">
       <a href="https://www.linkedin.com/in/jiahao-zhang-878a632b6/"><img src="jiahao.jpg" alt="Jiahao Zhang" width="150" style="border-radius: 8px;" /><br><strong>Jiahao Zhang</strong><br>Technical Consultant</a><br>
       Supports cross-platform ERP development, Power Platform integration, and ESG-focused implementation across food and logistics clients.
     </td>
-    <td align="center">
+    <td style="border: none; padding: 20px;" align="center" valign="top">
       <a href="https://www.linkedin.com/in/ziqi-ding-38353a327/"><img src="ziqi.jpeg" alt="Ziqi Ding" width="150" style="border-radius: 8px;" /><br><strong>Ziqi Ding</strong><br>Security Researcher</a><br>
       Focuses on source mapping and vulnerability detection in smart contracts. Builds the tooling for profit-centric fuzzing and compliance auditing.
     </td>
   </tr>
 </table>
+
 
 
 ---
