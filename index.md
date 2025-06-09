@@ -4,7 +4,7 @@
 ![Pei Xu](https://media.licdn.com/dms/image/v2/C5103AQF8jlM6eLFOGQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1552867482645?e=1755129600&v=beta&t=33sHInTDrsNBmjqssyJzf-PJgjsLVSShxVwVxsf60qI)
 Visionary in enterprise blockchain and smart contract security. Leads LeXurey’s product direction with expertise in ERP transformation and privacy-preserving compliance.
 
-### 【Joe Cardinale – ERP Senior Advisor](https://www.linkedin.com/in/joecardinale/)  
+### [Joe Cardinale – ERP Senior Advisor](https://www.linkedin.com/in/joecardinale/)  
 ![Joe Cardinale](https://media.licdn.com/dms/image/v2/C4D03AQHB0tuG5camVQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516770850917?e=1755129600&v=beta&t=h_UosJj4bpQqO_8bxANswdn_F5c5Loni5K0DAVhoNLI)
 Decades of experience guiding ERP rollouts in complex industries. Advises LeXurey on architecture, delivery models, and industry partnerships.
 
