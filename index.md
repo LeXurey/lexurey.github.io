@@ -153,5 +153,7 @@ Pei Xu – Director
 🔗 GitHub: [github.com/lexurey](https://github.com/lexurey)
 
 ---
+<!-- <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script> -->
+<!-- <script type="IN/FollowCompany" data-id="107500862" data-counter="bottom"></script> -->
 
 *LeXurey – Let Us Extend the Future for You.*
