@@ -1,9 +1,42 @@
 title: LeXurey
-theme: jekyll-theme-minimal
+logo: /img/official.png
+theme: just-the-docs
+
 description: |
   Let Us Extend the Future for You.
-  
+
   Contact us today for a free initial consultation and tailored ERP or ESG demo.
-  
-  Admin@leXurey.com
+
+  admin@lexurey.com
+
 show_downloads: false
+
+just_the_docs:
+  show_sidebar: true
+  show_right_sidebar: true
+  heading_anchors: true
+
+  nav:
+    - title: Home
+      url: /
+      children:
+        - title: Who We Are
+          url: /who-we-are
+        - title: What We’re Capable Of
+          url: /what-we-re-capable-of
+        - title: Our Vision
+          url: /our-vision
+        - title: What We Do
+          url: /what-we-do
+        - title: Research
+          url: /research
+        - title: Our Solution
+          url: /our-solution
+        - title: Action in Progress
+          url: /action
+        - title: Partnerships
+          url: /partnerships
+        - title: Challenges
+          url: /challenges
+        - title: Contact Us
+          url: /contact
