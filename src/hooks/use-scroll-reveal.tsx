@@ -56,7 +56,11 @@ export const useScrollRevealMultiple = (
           if (entry.isIntersecting) {
             const index = refs.current.findIndex((ref) => ref === entry.target);
             if (index !== -1) {
-              setVisibleItems((prev) => new Set([...prev, index]));
+              setVisibleItems((prev) => {
+                const newSet = new Set(prev);
+                newSet.add(index);
+                return newSet;
+              });
               observer.unobserve(entry.target);
             }
           }

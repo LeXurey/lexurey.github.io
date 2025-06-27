@@ -6,7 +6,7 @@ import { translations, Language } from "@/lib/translations";
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: typeof translations.en;
+  t: typeof translations.en | typeof translations.zh;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
@@ -30,7 +30,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const value: LanguageContextType = {
     language,
     setLanguage,
-    t: translations[language],
+    t: translations[language] as
+      | typeof translations.en
+      | typeof translations.zh,
   };
 
   return (
