@@ -249,12 +249,10 @@ export default function WhatWereCapableOfPage() {
           <div className="container mx-auto max-w-6xl">
             <div className="p-8 rounded-lg bg-gradient-to-r from-brand-navy to-brand-teal dark:from-brand-teal dark:to-brand-navy text-white text-center hover:scale-105 transform transition-all duration-200">
               <h2 className="text-3xl font-bold mb-4">
-                Enterprise-Grade Solutions
+                {t.whatWereCapableOf.enterpriseGrade.title}
               </h2>
               <p className="text-xl opacity-90 max-w-3xl mx-auto">
-                Our comprehensive capabilities enable us to deliver end-to-end
-                solutions that transform how enterprises handle compliance,
-                security, and transparency in the digital age.
+                {t.whatWereCapableOf.enterpriseGrade.description}
               </p>
             </div>
           </div>

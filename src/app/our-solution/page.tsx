@@ -125,12 +125,10 @@ export default function OurSolutionPage() {
 
             <div className="p-8 rounded-lg bg-muted/20 text-center">
               <h3 className="text-2xl font-bold mb-4 text-brand-navy dark:text-brand-teal">
-                Join Our Journey
+                {t.ourSolution.joinJourney.title}
               </h3>
               <p className="text-muted-foreground">
-                We're actively looking for partners and pilot customers to help
-                shape the future of enterprise blockchain solutions. Get in
-                touch to learn how you can be part of our innovation journey.
+                {t.ourSolution.joinJourney.description}
               </p>
             </div>
           </div>

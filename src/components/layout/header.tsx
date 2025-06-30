@@ -50,11 +50,15 @@ export function Header() {
             className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
           >
             <Image
-              src="/img/official.png"
+              src={
+                theme === "dark"
+                  ? "/img/company dark.PNG"
+                  : "/img/Company logo.PNG"
+              }
               alt="LeXurey Logo"
-              width={40}
-              height={40}
-              className="h-10 w-10"
+              width={56}
+              height={56}
+              className="h-14 w-14"
             />
             <span className="text-xl font-bold text-brand-navy dark:text-brand-teal">
               LeXurey

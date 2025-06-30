@@ -109,6 +109,11 @@ export const translations = {
           "How do we enforce compliance under shifting ESG standards without revealing sensitive data?",
         ],
       },
+      drivingInnovation: {
+        title: "Driving Innovation Through Research",
+        description:
+          "These fundamental questions guide our research and development efforts, ensuring that our solutions address real-world challenges in enterprise blockchain adoption.",
+      },
     },
     // What We're Capable Of Page
     whatWereCapableOf: {
@@ -181,6 +186,11 @@ export const translations = {
           },
         },
       ],
+      enterpriseGrade: {
+        title: "Enterprise-Grade Solutions",
+        description:
+          "Our comprehensive capabilities enable us to deliver end-to-end solutions that transform how enterprises handle compliance, security, and transparency in the digital age.",
+      },
     },
     // Who We Are Page
     whoWeAre: {
@@ -235,6 +245,11 @@ export const translations = {
           image: "/img/ziqi.jpeg",
         },
       ],
+      expertiseDrives: {
+        title: "Our Expertise Drives Innovation",
+        description:
+          "Our diverse team combines deep technical expertise with industry experience to deliver cutting-edge blockchain and ERP solutions that meet real-world enterprise needs.",
+      },
     },
     // Our Vision Page
     ourVision: {
@@ -282,6 +297,11 @@ export const translations = {
           title: "Phase 3",
           description: "Carbon market integrity solutions",
         },
+      },
+      joinJourney: {
+        title: "Join Our Journey",
+        description:
+          "We're actively looking for partners and pilot customers to help shape the future of enterprise blockchain solutions. Get in touch to learn how you can be part of our innovation journey.",
       },
     },
     // Action in Progress Page
@@ -422,6 +442,11 @@ export const translations = {
           "在不断变化的ESG标准下，如何在不透露敏感数据的情况下执行合规性？",
         ],
       },
+      drivingInnovation: {
+        title: "通过研究推动创新",
+        description:
+          "这些基本问题指导我们的研发工作，确保我们的解决方案解决企业区块链采用中的现实挑战。",
+      },
     },
     // What We're Capable Of Page
     whatWereCapableOf: {
@@ -494,6 +519,11 @@ export const translations = {
           },
         },
       ],
+      enterpriseGrade: {
+        title: "企业级解决方案",
+        description:
+          "我们的综合能力使我们能够提供端到端的解决方案，改变企业在数字时代处理合规性、安全性和透明度的方式。",
+      },
     },
     // Who We Are Page
     whoWeAre: {
@@ -548,6 +578,11 @@ export const translations = {
           image: "/img/ziqi.jpeg",
         },
       ],
+      expertiseDrives: {
+        title: "我们的专业知识推动创新",
+        description:
+          "我们多元化的团队将深厚的技术专业知识与行业经验相结合，提供满足现实企业需求的前沿区块链和ERP解决方案。",
+      },
     },
     // Our Vision Page
     ourVision: {
@@ -595,6 +630,11 @@ export const translations = {
           title: "第三阶段",
           description: "碳市场完整性解决方案",
         },
+      },
+      joinJourney: {
+        title: "加入我们的旅程",
+        description:
+          "我们正在积极寻找合作伙伴和试点客户，帮助塑造企业区块链解决方案的未来。联系我们，了解如何成为我们创新旅程的一部分。",
       },
     },
     // Action in Progress Page

@@ -115,12 +115,10 @@ export default function WhatWeDoPage() {
           <div className="container mx-auto max-w-4xl">
             <div className="p-8 rounded-lg bg-muted/20 text-center hover:bg-brand-teal/5 transition-colors duration-200">
               <h3 className="text-2xl font-bold mb-4 text-brand-navy dark:text-brand-teal">
-                Driving Innovation Through Research
+                {t.whatWeDo.drivingInnovation.title}
               </h3>
               <p className="text-muted-foreground">
-                These fundamental questions guide our research and development
-                efforts, ensuring that our solutions address real-world
-                challenges in enterprise blockchain adoption.
+                {t.whatWeDo.drivingInnovation.description}
               </p>
             </div>
           </div>

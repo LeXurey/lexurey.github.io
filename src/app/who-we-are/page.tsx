@@ -70,12 +70,10 @@ export default function WhoWeArePage() {
             }`}
           >
             <h2 className="text-2xl font-bold mb-4 text-brand-navy dark:text-brand-teal">
-              Our Expertise Drives Innovation
+              {t.whoWeAre.expertiseDrives.title}
             </h2>
             <p className="text-muted-foreground">
-              Our diverse team combines deep technical expertise with industry
-              experience to deliver cutting-edge blockchain and ERP solutions
-              that meet real-world enterprise needs.
+              {t.whoWeAre.expertiseDrives.description}
             </p>
           </div>
         </div>
