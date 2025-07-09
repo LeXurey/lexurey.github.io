@@ -3,7 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { Moon, Sun, Globe, Menu } from "lucide-react";
+import {
+  Moon,
+  Sun,
+  Globe,
+  Menu,
+  ExternalLink,
+  ChevronDown,
+} from "lucide-react";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -28,12 +35,21 @@ export function Header() {
   }, []);
 
   const navItems = [
-    { href: "/what-we-do", label: t.nav.whatWeDo },
     { href: "/what-were-capable-of", label: t.nav.whatWereCapableOf },
     { href: "/who-we-are", label: t.nav.whoWeAre },
     { href: "/our-solution", label: t.nav.ourSolution },
     { href: "/blog", label: t.nav.blog },
     { href: "/contact", label: t.nav.contactUs },
+  ];
+
+  const whatWeDoItems = [
+    { href: "/what-we-do", label: t.nav.carbonAuditing },
+    { href: "/security", label: t.nav.security },
+    {
+      href: "https://compusoftaus.com.au",
+      label: t.nav.compusoftAustralia,
+      external: true,
+    },
   ];
 
   if (!mounted) {
@@ -67,6 +83,63 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
+            {/* What We Do Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className={`text-base font-medium transition-all duration-200 hover:scale-105 transform flex items-center space-x-1 group`}
+                >
+                  <span
+                    className={`
+                      ${
+                        pathname === "/what-we-do" || pathname === "/security"
+                          ? "bg-gradient-to-r from-brand-navy to-brand-teal dark:from-brand-teal dark:to-brand-navy bg-clip-text text-transparent"
+                          : "text-foreground/80 group-hover:bg-gradient-to-r group-hover:from-brand-navy group-hover:to-brand-teal dark:group-hover:from-brand-teal dark:group-hover:to-brand-navy group-hover:bg-clip-text group-hover:text-transparent"
+                      }
+                    `}
+                  >
+                    {t.nav.whatWeDo}
+                  </span>
+                  <ChevronDown
+                    className={`
+                      w-4 h-4 transition-colors
+                      ${
+                        pathname === "/what-we-do" || pathname === "/security"
+                          ? "text-brand-teal"
+                          : "text-foreground/80 group-hover:text-brand-teal"
+                      }
+                    `}
+                  />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-56">
+                {whatWeDoItems.map((item) => (
+                  <DropdownMenuItem
+                    key={item.href}
+                    asChild
+                    className="transition-all"
+                  >
+                    {item.external ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between"
+                      >
+                        <span>{item.label}</span>
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    ) : (
+                      <Link href={item.href} className="flex items-center">
+                        <span>{item.label}</span>
+                      </Link>
+                    )}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Other Navigation Items */}
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -140,6 +213,50 @@ export function Header() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48">
+                {/* What We Do Section */}
+                <div className="px-2 py-1">
+                  <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">
+                    {t.nav.whatWeDo}
+                  </p>
+                  {whatWeDoItems.map((item) => {
+                    const isActive = pathname === item.href;
+                    return (
+                      <DropdownMenuItem
+                        key={item.href}
+                        asChild
+                        className={`ml-2 transition-all ${
+                          isActive
+                            ? "bg-gradient-to-r from-brand-navy to-brand-teal dark:from-brand-teal dark:to-brand-navy text-white font-bold"
+                            : ""
+                        }`}
+                      >
+                        {item.external ? (
+                          <a
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-between w-full"
+                          >
+                            <span>{item.label}</span>
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        ) : (
+                          <Link
+                            href={item.href}
+                            className="flex items-center w-full"
+                          >
+                            <span>{item.label}</span>
+                          </Link>
+                        )}
+                      </DropdownMenuItem>
+                    );
+                  })}
+                </div>
+
+                {/* Separator */}
+                <div className="my-1 h-px bg-border" />
+
+                {/* Other Navigation Items */}
                 {navItems.map((item) => {
                   const isActive = pathname === item.href;
                   return (

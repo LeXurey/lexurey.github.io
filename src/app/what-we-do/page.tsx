@@ -33,6 +33,35 @@ export default function WhatWeDoPage() {
           </div>
         </section>
 
+        {/* Video Section */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-4 text-brand-navy dark:text-brand-teal">
+                {t.whatWeDo.video.title}
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                {t.whatWeDo.video.description}
+              </p>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-4xl">
+                <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg border">
+                  <iframe
+                    src="https://www.youtube.com/embed/iZHo6gnMpM4"
+                    title="LeXurey Solutions Overview"
+                    className="absolute top-0 left-0 w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Services Section */}
         <section
           ref={servicesReveal.ref}

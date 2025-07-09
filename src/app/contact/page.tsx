@@ -11,7 +11,6 @@ export default function ContactPage() {
   const { t } = useLanguage();
 
   const contactReveal = useScrollReveal();
-  const linkedinReveal = useScrollReveal();
 
   return (
     <PageWrapper>
@@ -31,7 +30,7 @@ export default function ContactPage() {
             <div className="space-y-6">
               <div className="p-6 rounded-lg border bg-card text-card-foreground">
                 <h2 className="text-2xl font-bold mb-4 text-brand-navy dark:text-brand-teal">
-                  Get in Touch
+                  {t.contact.getInTouch}
                 </h2>
                 <p className="text-muted-foreground mb-6">
                   {t.common.contactToday}
@@ -95,7 +94,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="p-6 rounded-lg border bg-card text-card-foreground">
               <h2 className="text-2xl font-bold mb-4 text-brand-navy dark:text-brand-teal">
-                Send us a Message
+                {t.contact.sendMessage}
               </h2>
               <form className="space-y-4">
                 <div>
@@ -103,13 +102,13 @@ export default function ContactPage() {
                     htmlFor="name"
                     className="block text-sm font-medium mb-2"
                   >
-                    Name
+                    {t.contact.form.name}
                   </label>
                   <input
                     type="text"
                     id="name"
                     className="w-full p-3 rounded-md border bg-background"
-                    placeholder="Your Name"
+                    placeholder={t.contact.form.namePlaceholder}
                   />
                 </div>
 
@@ -118,13 +117,13 @@ export default function ContactPage() {
                     htmlFor="email"
                     className="block text-sm font-medium mb-2"
                   >
-                    Email
+                    {t.contact.form.email}
                   </label>
                   <input
                     type="email"
                     id="email"
                     className="w-full p-3 rounded-md border bg-background"
-                    placeholder="your.email@example.com"
+                    placeholder={t.contact.form.emailPlaceholder}
                   />
                 </div>
 
@@ -133,13 +132,13 @@ export default function ContactPage() {
                     htmlFor="company"
                     className="block text-sm font-medium mb-2"
                   >
-                    Company
+                    {t.contact.form.company}
                   </label>
                   <input
                     type="text"
                     id="company"
                     className="w-full p-3 rounded-md border bg-background"
-                    placeholder="Your Company"
+                    placeholder={t.contact.form.companyPlaceholder}
                   />
                 </div>
 
@@ -148,13 +147,13 @@ export default function ContactPage() {
                     htmlFor="message"
                     className="block text-sm font-medium mb-2"
                   >
-                    Message
+                    {t.contact.form.message}
                   </label>
                   <textarea
                     id="message"
                     rows={4}
                     className="w-full p-3 rounded-md border bg-background"
-                    placeholder="Tell us about your project or inquiry..."
+                    placeholder={t.contact.form.messagePlaceholder}
                   />
                 </div>
 
@@ -162,26 +161,13 @@ export default function ContactPage() {
                   type="submit"
                   className="w-full bg-brand-teal hover:bg-brand-teal/90"
                 >
-                  Send Message
+                  {t.contact.form.sendButton}
                 </Button>
               </form>
             </div>
           </div>
 
-          {/* LinkedIn Follow Button */}
-          <div
-            ref={linkedinReveal.ref}
-            className={`mt-12 text-center scroll-reveal ${
-              linkedinReveal.isVisible ? "visible" : ""
-            }`}
-          >
-            <div
-              dangerouslySetInnerHTML={{
-                __html:
-                  '<script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script><script type="IN/FollowCompany" data-id="107500862" data-counter="bottom"></script>',
-              }}
-            />
-          </div>
+
         </div>
       </div>
     </PageWrapper>

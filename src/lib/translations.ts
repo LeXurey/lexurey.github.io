@@ -5,6 +5,9 @@ export const translations = {
       home: "Home",
       research: "Research",
       whatWeDo: "What We Do",
+      carbonAuditing: "Carbon Auditing",
+      security: "Security",
+      compusoftAustralia: "Compusoft Australia",
       whatWereCapableOf: "What We're Capable Of",
       whoWeAre: "Who We Are",
       ourVision: "Our Vision",
@@ -113,6 +116,10 @@ export const translations = {
         title: "Driving Innovation Through Research",
         description:
           "These fundamental questions guide our research and development efforts, ensuring that our solutions address real-world challenges in enterprise blockchain adoption.",
+      },
+      video: {
+        title: "Learn More About Our Solutions",
+        description: "Watch this video to understand how our technology works",
       },
     },
     // What We're Capable Of Page
@@ -317,6 +324,31 @@ export const translations = {
       email: "admin@lexurey.com",
       website: "https://lexurey.com",
       github: "GitHub: github.com/lexurey",
+      getInTouch: "Get in Touch",
+      sendMessage: "Send us a Message",
+      form: {
+        name: "Name",
+        namePlaceholder: "Your Name",
+        email: "Email",
+        emailPlaceholder: "your.email@example.com",
+        company: "Company",
+        companyPlaceholder: "Your Company",
+        message: "Message",
+        messagePlaceholder: "Tell us about your project or inquiry...",
+        sendButton: "Send Message",
+      },
+    },
+    // Security Page
+    security: {
+      title: "Security Solutions",
+      subtitle: "Advanced Security Auditing and Vulnerability Assessment",
+      stayTuned: {
+        title: "Stay Tuned",
+        description:
+          "We're developing comprehensive security solutions including smart contract auditing, vulnerability assessment, and penetration testing services. Check back soon for updates!",
+        comingSoon:
+          "Coming Soon: Smart contract auditing, security assessments, vulnerability reports, and security best practices",
+      },
     },
     // Blog Page
     blog: {
@@ -345,6 +377,9 @@ export const translations = {
       home: "首页",
       research: "研究",
       whatWeDo: "我们的业务",
+      carbonAuditing: "碳审计",
+      security: "安全",
+      compusoftAustralia: "Compusoft澳大利亚",
       whatWereCapableOf: "我们的能力",
       whoWeAre: "关于我们",
       ourVision: "我们的愿景",
@@ -446,6 +481,10 @@ export const translations = {
         title: "通过研究推动创新",
         description:
           "这些基本问题指导我们的研发工作，确保我们的解决方案解决企业区块链采用中的现实挑战。",
+      },
+      video: {
+        title: "了解更多我们的解决方案",
+        description: "观看此视频了解我们的技术如何运作",
       },
     },
     // What We're Capable Of Page
@@ -650,6 +689,31 @@ export const translations = {
       email: "admin@lexurey.com",
       website: "https://lexurey.com",
       github: "GitHub: github.com/lexurey",
+      getInTouch: "联系我们",
+      sendMessage: "发送消息",
+      form: {
+        name: "姓名",
+        namePlaceholder: "您的姓名",
+        email: "邮箱",
+        emailPlaceholder: "您的邮箱@example.com",
+        company: "公司",
+        companyPlaceholder: "您的公司",
+        message: "消息",
+        messagePlaceholder: "告诉我们您的项目或询问...",
+        sendButton: "发送消息",
+      },
+    },
+    // Security Page
+    security: {
+      title: "安全解决方案",
+      subtitle: "先进的安全审计和漏洞评估",
+      stayTuned: {
+        title: "敬请期待",
+        description:
+          "我们正在开发全面的安全解决方案，包括智能合约审计、漏洞评估和渗透测试服务。请稍后回来查看更新！",
+        comingSoon:
+          "即将推出：智能合约审计、安全评估、漏洞报告和安全最佳实践",
+      },
     },
     // Blog Page
     blog: {
