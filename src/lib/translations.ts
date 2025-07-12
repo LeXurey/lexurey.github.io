@@ -349,6 +349,20 @@ export const translations = {
         comingSoon:
           "Coming Soon: Smart contract auditing, security assessments, vulnerability reports, and security best practices",
       },
+      captcha: {
+        title: "Next Generation Cyber Security System",
+        description:
+          "Protect your system from increasingly sophisticated threats powered by large language models (LLMs). We provide cutting-edge AI powered solutions to detect vulnreabilities in your system and protect your system from sophisticated bot attacks.",
+        features: [
+          "IllusionCAPTCHA",
+          "Penetration Testing Services",
+          "Smart Contract Auditing",
+          "Security Assessment",
+          "CI/CD Integrated Vulnerability Scanning",
+          "AI-powered Bot Detection",
+        ],
+        news: "News: IllusionCAPTCHA next generation of CAPTCHA system is available now!"
+      },
     },
     // Blog Page
     blog: {
@@ -713,6 +727,21 @@ export const translations = {
           "我们正在开发全面的安全解决方案，包括智能合约审计、漏洞评估和渗透测试服务。请稍后回来查看更新！",
         comingSoon:
           "即将推出：智能合约审计、安全评估、漏洞报告和安全最佳实践",
+      },
+      captcha: {
+        title: "下一代CAPTCHA系统",
+        description:
+          "保护您的系统免受恶意访问，特别是那些利用LLM技术变得更加恶意的攻击。我们的先进CAPTCHA系统使用尖端AI检测技术来区分真实用户和复杂的机器人攻击。",
+        features: [
+          "IllusionCAPTCHA",
+          "渗透测试服务",
+          "智能合约审计",
+          "安全评估",
+          "CI/CD集成漏洞扫描",
+          "AI驱动的机器人检测"
+        ],
+        comingSoon: "即将推出：高级CAPTCHA部署、威胁分析仪表板和自动化响应系统",
+        news: "新闻：IllusionCAPTCHA下一代CAPTCHA系统现已可用。立即试用！"
       },
     },
     // Blog Page
