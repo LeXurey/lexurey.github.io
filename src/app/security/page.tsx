@@ -103,16 +103,16 @@ export default function SecurityPage() {
         {/* CAPTCHA System Section */}
         <section
           ref={captchaReveal.ref}
-          className={`py-16 px-4 bg-brand-teal/5 dark:bg-brand-navy/10 scroll-reveal ${
+          className={`py-8 sm:py-16 px-4 bg-brand-teal/5 dark:bg-brand-navy/10 scroll-reveal ${
             captchaReveal.isVisible ? "visible" : ""
           }`}
         >
           <div className="container mx-auto max-w-5xl">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-brand-navy dark:text-brand-teal">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-brand-navy dark:text-brand-teal">
                 {t.security.captcha.title}
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto">
                 {t.security.captcha.description}
               </p>
             </div>
@@ -162,26 +162,26 @@ export default function SecurityPage() {
               </div>
             ) : (
               <div className="mb-12 animate-in slide-in-from-top-2 duration-400">
-                <div className="p-8 rounded-xl bg-white dark:bg-gray-800 shadow-lg border border-brand-teal/50 transition-all duration-400 scale-in-center">
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-16 h-16 bg-brand-teal/10 rounded-xl flex items-center justify-center">
-                        <Eye className="w-8 h-8 text-brand-teal" />
+                <div className="p-4 sm:p-8 rounded-xl bg-white dark:bg-gray-800 shadow-lg border border-brand-teal/50 transition-all duration-400 scale-in-center">
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="flex items-center space-x-3 sm:space-x-4 flex-1 min-w-0">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-brand-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Eye className="w-6 h-6 sm:w-8 sm:h-8 text-brand-teal" />
                       </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-brand-navy dark:text-brand-teal">
+                      <div className="min-w-0 flex-1">
+                        <h3 className="text-lg sm:text-2xl font-bold text-brand-navy dark:text-brand-teal truncate">
                           IllusionCAPTCHA
                         </h3>
-                        <p className="text-muted-foreground">
+                        <p className="text-sm sm:text-base text-muted-foreground truncate">
                           Interactive Demo
                         </p>
                       </div>
                     </div>
                     <button
                       onClick={handleCaptchaClick}
-                      className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                      className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors flex-shrink-0 ml-2"
                     >
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                       </svg>
                     </button>
@@ -291,9 +291,9 @@ export default function SecurityPage() {
             )}
 
             {/* News Banner */}
-            <div className="bg-gradient-to-r from-brand-teal to-brand-navy rounded-2xl p-8 text-white shadow-lg">
+            <div className="bg-gradient-to-r from-brand-teal to-brand-navy rounded-2xl p-4 sm:p-8 text-white shadow-lg">
               <div className="text-center">
-                <p className="text-xl font-semibold">
+                <p className="text-lg sm:text-xl font-semibold">
                   {t.security.captcha.news}
                 </p>
               </div>
