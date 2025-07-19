@@ -251,6 +251,14 @@ export const translations = {
           linkedin: "https://www.linkedin.com/in/ziqi-ding-38353a327/",
           image: "/img/ziqi.jpeg",
         },
+        {
+          name: "Shangzhi Xu",
+          title: "Security Researcher",
+          description:
+            "Specializes in security system & AI system implementation. Leads the development of next-generation cybersecurity solutions and AI-powered weakness detection systems.",
+          linkedin: "https://www.linkedin.com/in/shangzhi-xu-270724245/",
+          image: "/img/shangzhi.jpeg",
+        },
       ],
       expertiseDrives: {
         title: "Our Expertise Drives Innovation",
@@ -629,6 +637,14 @@ export const translations = {
             "专注于智能合约中的源映射和漏洞检测。构建以利润为中心的模糊测试和合规审计工具。",
           linkedin: "https://www.linkedin.com/in/ziqi-ding-38353a327/",
           image: "/img/ziqi.jpeg",
+        },
+        {
+          name: "徐尚志",
+          title: "安全研究员",
+          description:
+            "专注于安全与安全开发。领导下一代网络安全解决方案和AI驱动的漏洞检测系统的开发。",
+          linkedin: "https://www.linkedin.com/in/shangzhi-xu-270724245/",
+          image: "/img/shangzhi.jpeg",
         },
       ],
       expertiseDrives: {
