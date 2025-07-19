@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
 import { PageWrapper } from "@/components/layout/page-wrapper";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { ChatWidget } from "@/components/ui/chat-widget";
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -225,6 +226,9 @@ export default function HomePage() {
           </div>
         </section>
       </div>
+      
+      {/* Chat Widget */}
+      <ChatWidget />
     </PageWrapper>
   );
 }
