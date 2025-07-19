@@ -19,7 +19,7 @@ export function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "How can I assist you? 😎",
+      text: "How can I assist you? 😎 (Our chatbot is still under development)",
       isUser: false,
       timestamp: new Date(),
     },
@@ -68,7 +68,7 @@ export function ChatWidget() {
     setTimeout(() => {
       const aiMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: "Thanks for your message! Our team will get back to you soon. You can also contact us directly at admin@lexurey.com",
+        text: "Thanks for your message! Our chatbot is still under development. You can contact us directly at admin@lexurey.com",
         isUser: false,
         timestamp: new Date(),
       };
