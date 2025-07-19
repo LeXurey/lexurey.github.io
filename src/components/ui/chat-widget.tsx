@@ -10,6 +10,7 @@ interface Message {
   text: string;
   isUser: boolean;
   timestamp: Date;
+  hasLink?: boolean;
 }
 
 export function ChatWidget() {
@@ -28,6 +29,7 @@ export function ChatWidget() {
       text: "Wanna try a small game? Even ChatGPT can't solve it! Our IllusionCAPTCHA protects your website from bots. 🎮",
       isUser: false,
       timestamp: new Date(),
+      hasLink: true,
     },
   ]);
   const [inputValue, setInputValue] = useState("");
@@ -130,6 +132,13 @@ export function ChatWidget() {
                   }`}
                 >
                   <p className="text-sm">{message.text}</p>
+                  {message.hasLink && (
+                    <Link href="/security">
+                      <Button className="w-full mt-2 bg-brand-teal hover:bg-brand-teal/90 text-white text-xs py-1 px-3 rounded transition-all duration-200 hover:scale-105 transform">
+                        🎯 Try IllusionCAPTCHA Now!
+                      </Button>
+                    </Link>
+                  )}
                   <p className="text-xs opacity-70 mt-1">
                     {message.timestamp.toLocaleTimeString([], {
                       hour: "2-digit",
