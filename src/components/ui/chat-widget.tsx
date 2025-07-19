@@ -19,7 +19,13 @@ export function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "How can I help you? I'm here for assistance 😎",
+      text: "How can I assist you? 😎",
+      isUser: false,
+      timestamp: new Date(),
+    },
+    {
+      id: "2",
+      text: "Hey, wanna try a small game? Even ChatGPT can't solve it! Our IllusionCAPTCHA protects your website from bots. 🎮",
       isUser: false,
       timestamp: new Date(),
     },
@@ -28,34 +34,22 @@ export function ChatWidget() {
 
   // Auto-popup effect on page load
   useEffect(() => {
-    const showTimer = setTimeout(() => {
-      setIsOpen(true);
-      setIsMinimized(false);
-    }, 1000); // Pop up after 1 second
-
-    const hideTimer = setTimeout(() => {
-      setIsOpen(false);
-      setIsMinimized(true);
-    }, 3000); // Hide after 3 seconds (3 seconds of display)
-
     const tooltipTimer = setTimeout(() => {
       setShowTooltip(true);
-    }, 3500); // Show tooltip after 3.5 seconds
+    }, 1000); // Show tooltip after 1 second
 
     const hideTooltipTimer = setTimeout(() => {
       setShowTooltip(false);
-    }, 10500); // Hide tooltip after 10.5 seconds (6 seconds display)
+    }, 7000); // Hide tooltip after 7 seconds (6 seconds display)
 
     return () => {
-      clearTimeout(showTimer);
-      clearTimeout(hideTimer);
       clearTimeout(tooltipTimer);
       clearTimeout(hideTooltipTimer);
     };
   }, []);
 
-  // Always show the chat icon when not open
-  const shouldShowIcon = !isOpen || isMinimized;
+  // Always show the chat icon
+  const shouldShowIcon = true;
 
   const handleSendMessage = () => {
     if (!inputValue.trim()) return;
