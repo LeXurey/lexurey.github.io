@@ -25,7 +25,7 @@ export function ChatWidget() {
     },
     {
       id: "2",
-      text: "Hey, wanna try a small game? Even ChatGPT can't solve it! Our IllusionCAPTCHA protects your website from bots. 🎮",
+      text: "Wanna try a small game? Even ChatGPT can't solve it! Our IllusionCAPTCHA protects your website from bots. 🎮",
       isUser: false,
       timestamp: new Date(),
     },
