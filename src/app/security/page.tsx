@@ -273,7 +273,7 @@ export default function SecurityPage() {
                             {captchaImages.map((image, index) => (
                               <div
                                 key={index}
-                                className={`w-40 h-40 md:w-48 md:h-48 bg-white rounded-lg shadow-md overflow-hidden border transition-all duration-200 cursor-pointer relative ${
+                                className={`w-24 h-24 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-white rounded-lg shadow-md overflow-hidden border transition-all duration-200 cursor-pointer relative ${
                                   userSelection.includes(index)
                                     ? 'border-4 border-brand-teal bg-brand-teal/10 ring-2 ring-brand-teal/40'
                                     : 'border border-gray-200 dark:border-gray-700 hover:border-brand-teal/50'
