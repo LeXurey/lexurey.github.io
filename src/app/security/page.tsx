@@ -17,11 +17,11 @@ export default function SecurityPage() {
   const [hasBeenExpanded, setHasBeenExpanded] = useState(false);
   const [captchaImages, setCaptchaImages] = useState<string[]>([]);
   const [captchaQuestion, setCaptchaQuestion] = useState<string>('');
-  const [captchaAnswer, setCaptchaAnswer] = useState<number[]>([]); // 支持多选
+  const [captchaAnswer, setCaptchaAnswer] = useState<number[]>([]); // support multiple choice
   const [isLoading, setIsLoading] = useState(false);
-  const [userSelection, setUserSelection] = useState<number[]>([]); // 支持多选
+  const [userSelection, setUserSelection] = useState<number[]>([]); // support multiple choice
   const [showResult, setShowResult] = useState(false);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null); // 新增
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null); // new
 
   // Handle animation and "Try me" text
   useEffect(() => {
@@ -131,7 +131,7 @@ export default function SecurityPage() {
   };
 
   const handleImageClick = (index: number) => {
-    if (showResult) return; // 答案已提交后不可再选
+    if (showResult) return; // answer submitted, cannot be selected again
     if (userSelection.includes(index)) {
       setUserSelection(userSelection.filter(i => i !== index));
     } else if (userSelection.length < (Array.isArray(captchaAnswer) ? captchaAnswer.length : 1)) {
@@ -142,7 +142,7 @@ export default function SecurityPage() {
   const handleSubmit = () => {
     setShowResult(true);
     if (Array.isArray(captchaAnswer) && captchaAnswer.length === 2) {
-      // 多选，顺序无关
+      // multiple choice, order doesn't matter
       const sortedUser = [...userSelection].sort();
       const sortedAnswer = [...captchaAnswer].sort();
       setIsCorrect(
@@ -151,8 +151,8 @@ export default function SecurityPage() {
         sortedUser[1] === sortedAnswer[1]
       );
     } else {
-      // 单选
-      setIsCorrect(userSelection[0] === captchaAnswer);
+      // single choice
+      setIsCorrect(userSelection[0] === captchaAnswer[0]);
     }
   };
 
