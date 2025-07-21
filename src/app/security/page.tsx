@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useLanguage } from "@/hooks/use-language";
 import { PageWrapper } from "@/components/layout/page-wrapper";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { Lock, Shield, Eye, Zap, FileCheck, Search, GitBranch, Bot } from "lucide-react";
+import { Lock, Shield, Eye, Zap, FileCheck, Search, GitBranch, Bot, X, RotateCw } from "lucide-react";
 
 export default function SecurityPage() {
   const { t } = useLanguage();
@@ -17,10 +17,11 @@ export default function SecurityPage() {
   const [hasBeenExpanded, setHasBeenExpanded] = useState(false);
   const [captchaImages, setCaptchaImages] = useState<string[]>([]);
   const [captchaQuestion, setCaptchaQuestion] = useState<string>('');
-  const [captchaAnswer, setCaptchaAnswer] = useState<number>(-1);
+  const [captchaAnswer, setCaptchaAnswer] = useState<number[]>([]); // 支持多选
   const [isLoading, setIsLoading] = useState(false);
-  const [userSelection, setUserSelection] = useState<number>(-1);
+  const [userSelection, setUserSelection] = useState<number[]>([]); // 支持多选
   const [showResult, setShowResult] = useState(false);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null); // 新增
 
   // Handle animation and "Try me" text
   useEffect(() => {
@@ -67,7 +68,7 @@ export default function SecurityPage() {
         setCaptchaImages(imagesWithPrefix);
         setCaptchaQuestion(data.question);
         setCaptchaAnswer(data.answer);
-        setUserSelection(-1);
+        setUserSelection([]); // reset user selection
         setShowResult(false);
         setShowCaptchaExpanded(true);
         setHasBeenExpanded(true);
@@ -81,8 +82,8 @@ export default function SecurityPage() {
         ];
         setCaptchaImages(fallbackImages);
         setCaptchaQuestion('Which one is a Dog?');
-        setCaptchaAnswer(0);
-        setUserSelection(-1);
+        setCaptchaAnswer([0, 1]); 
+        setUserSelection([]);
         setShowResult(false);
       } finally {
         setIsLoading(false);
@@ -92,9 +93,67 @@ export default function SecurityPage() {
     }
   };
 
+  const handleCaptchaRefresh = async () => {
+    setIsLoading(true);
+    try {
+      const apiUrl = 'https://illusioncaptcha.onrender.com/test/images_with_question';
+      const response = await fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache'
+        }
+      });
+      if (!response.ok) {
+        throw new Error(`Failed to load CAPTCHA: ${response.status}`);
+      }
+      const data = await response.json();
+      const imagesWithPrefix = data.images.map((base64String: string) => `data:image/png;base64,${base64String}`);
+      setCaptchaImages(imagesWithPrefix);
+      setCaptchaQuestion(data.question);
+      setCaptchaAnswer(data.answer);
+      setUserSelection([]);
+      setShowResult(false);
+    } catch (error) {
+      const fallbackImages = [
+        'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkRvZyAxPC90ZXh0Pjwvc3ZnPg==',
+        'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNhdCAxPC90ZXh0Pjwvc3ZnPg==',
+        'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkRvZyAyPC90ZXh0Pjwvc3ZnPg=='
+      ];
+      setCaptchaImages(fallbackImages);
+      setCaptchaQuestion('Which one is a Dog?');
+      setCaptchaAnswer([0, 1]);
+      setUserSelection([]);
+      setShowResult(false);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const handleImageClick = (index: number) => {
-    setUserSelection(index);
+    if (showResult) return; // 答案已提交后不可再选
+    if (userSelection.includes(index)) {
+      setUserSelection(userSelection.filter(i => i !== index));
+    } else if (userSelection.length < (Array.isArray(captchaAnswer) ? captchaAnswer.length : 1)) {
+      setUserSelection([...userSelection, index]);
+    }
+  };
+
+  const handleSubmit = () => {
     setShowResult(true);
+    if (Array.isArray(captchaAnswer) && captchaAnswer.length === 2) {
+      // 多选，顺序无关
+      const sortedUser = [...userSelection].sort();
+      const sortedAnswer = [...captchaAnswer].sort();
+      setIsCorrect(
+        sortedUser.length === 2 &&
+        sortedUser[0] === sortedAnswer[0] &&
+        sortedUser[1] === sortedAnswer[1]
+      );
+    } else {
+      // 单选
+      setIsCorrect(userSelection[0] === captchaAnswer);
+    }
   };
 
   return (
@@ -173,18 +232,26 @@ export default function SecurityPage() {
                           IllusionCAPTCHA
                         </h3>
                         <p className="text-sm sm:text-base text-muted-foreground truncate">
-                          Interactive Demo
+                          {t.security.captcha.demo}
                         </p>
                       </div>
                     </div>
-                    <button
-                      onClick={handleCaptchaClick}
-                      className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors flex-shrink-0 ml-2"
-                    >
-                      <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
+                    <div className="flex items-center gap-2 ml-2">
+                      <button
+                        onClick={handleCaptchaClick}
+                        className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors flex-shrink-0"
+                        title="关闭"
+                      >
+                        <X className="w-5 h-5 sm:w-6 sm:h-6 text-brand-navy dark:text-brand-teal" />
+                      </button>
+                      <button
+                        onClick={handleCaptchaRefresh}
+                        className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-brand-teal/20 transition-colors flex-shrink-0"
+                        title="刷新验证码"
+                      >
+                        <RotateCw className="w-5 h-5 sm:w-6 sm:h-6 text-brand-navy dark:text-brand-teal" />
+                      </button>
+                    </div>
                   </div>
                   <div className="min-h-[400px] flex items-center justify-center">
                     {isLoading ? (
@@ -193,7 +260,7 @@ export default function SecurityPage() {
                           <Eye className="w-12 h-12 text-brand-teal" />
                         </div>
                         <p className="text-lg text-muted-foreground">
-                          Loading CAPTCHA images...
+                          {t.security.captcha.loading}
                         </p>
                       </div>
                     ) : captchaImages.length > 0 ? (
@@ -201,34 +268,57 @@ export default function SecurityPage() {
                         <h4 className="text-lg font-semibold text-brand-navy dark:text-brand-teal mb-6 text-center">
                           {captchaQuestion}
                         </h4>
-                                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                          {captchaImages.map((image, index) => (
-                            <div key={index} className="flex flex-col items-center">
-                              <div 
-                                className={`w-full max-w-xs bg-white rounded-lg shadow-md overflow-hidden border transition-all duration-200 cursor-pointer ${
-                                  userSelection === index 
-                                    ? index === captchaAnswer 
-                                      ? 'border-green-500 bg-green-50 dark:bg-green-900/20' 
-                                      : 'border-red-500 bg-red-50 dark:bg-red-900/20'
-                                    : 'border-gray-200 dark:border-gray-700 hover:border-brand-teal/50'
+                        <div className="w-full flex justify-center">
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4 md:gap-x-4 md:gap-y-6">
+                            {captchaImages.map((image, index) => (
+                              <div
+                                key={index}
+                                className={`w-40 h-40 md:w-48 md:h-48 bg-white rounded-lg shadow-md overflow-hidden border transition-all duration-200 cursor-pointer relative ${
+                                  userSelection.includes(index)
+                                    ? 'border-4 border-brand-teal bg-brand-teal/10 ring-2 ring-brand-teal/40'
+                                    : 'border border-gray-200 dark:border-gray-700 hover:border-brand-teal/50'
                                 }`}
                                 onClick={() => handleImageClick(index)}
+                                style={{ margin: 0, padding: 0 }}
                               >
-                                <img 
-                                  src={image} 
+                                <img
+                                  src={image}
                                   alt={`CAPTCHA Image ${index + 1}`}
-                                  className="w-full h-auto object-cover"
+                                  className="w-full h-full object-cover"
                                 />
+                                {userSelection.includes(index) && (
+                                  <>
+                                    <div className="absolute inset-0 bg-brand-teal/30 opacity-60 pointer-events-none rounded-lg"></div>
+                                    <div className="absolute top-2 right-2 bg-white rounded-full p-1 shadow-md">
+                                      <svg className="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                                      </svg>
+                                    </div>
+                                  </>
+                                )}
                               </div>
-                              <p className="mt-2 text-sm text-muted-foreground">
-                                Option {index + 1}
-                              </p>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
                         </div>
-                        {showResult ? (
+                        {!showResult && (
                           <div className="mt-8 text-center">
-                            {userSelection === captchaAnswer ? (
+                            <button
+                              onClick={handleSubmit}
+                              disabled={userSelection.length !== (Array.isArray(captchaAnswer) ? captchaAnswer.length : 1)}
+                              className="px-6 py-2 rounded bg-brand-teal text-white font-semibold disabled:opacity-50"
+                            >
+                              {t.security.captcha.submit || '提交'}
+                            </button>
+                            <p className="text-sm text-muted-foreground mt-2">
+                              {Array.isArray(captchaAnswer) && captchaAnswer.length === 2
+                                ? t.security.captcha.selectMulti.replace('{n}', String(captchaAnswer.length)) || `请选择${captchaAnswer.length}个图片后提交`
+                                : t.security.captcha.selectSingle || '选择正确图片后提交'}
+                            </p>
+                          </div>
+                        )}
+                        {showResult && (
+                          <div className="mt-8 text-center">
+                            {isCorrect ? (
                               <div className="p-4 bg-green-100 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
                                 <div className="flex items-center justify-center mb-2">
                                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-2">
@@ -237,11 +327,11 @@ export default function SecurityPage() {
                                     </svg>
                                   </div>
                                   <h5 className="text-lg font-semibold text-green-800 dark:text-green-200">
-                                    Congratulations!
+                                    {t.security.captcha.correct || '恭喜你！'}
                                   </h5>
                                 </div>
                                 <p className="text-green-700 dark:text-green-300">
-                                  We can now go to the protected pages
+                                  {t.security.captcha.correctDesc || '你现在可以访问受保护页面'}
                                 </p>
                               </div>
                             ) : (
@@ -253,24 +343,13 @@ export default function SecurityPage() {
                                     </svg>
                                   </div>
                                   <h5 className="text-lg font-semibold text-red-800 dark:text-red-200">
-                                    Incorrect Answer
+                                    {t.security.captcha.incorrect || '答案错误'}
                                   </h5>
                                 </div>
                                 <p className="text-red-700 dark:text-red-300">
-                                  Please try again or refresh for a new challenge
+                                  {t.security.captcha.incorrectDesc || '请重试或刷新获取新挑战'}
                                 </p>
                               </div>
-                            )}
-                          </div>
-                        ) : (
-                          <div className="mt-8 text-center">
-                            <p className="text-sm text-muted-foreground">
-                              Select the correct image to proceed
-                            </p>
-                            {captchaAnswer !== -1 && (
-                              <p className="text-xs text-muted-foreground mt-2">
-                                (Answer: Option {captchaAnswer + 1})
-                              </p>
                             )}
                           </div>
                         )}
@@ -281,7 +360,7 @@ export default function SecurityPage() {
                           <Eye className="w-12 h-12 text-brand-teal" />
                         </div>
                         <p className="text-lg text-muted-foreground">
-                          Click to load CAPTCHA images
+                          {t.security.captcha.clickToLoad}
                         </p>
                       </div>
                     )}

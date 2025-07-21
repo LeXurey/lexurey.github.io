@@ -369,7 +369,17 @@ export const translations = {
           "CI/CD Integrated Vulnerability Scanning",
           "AI-powered Bot Detection",
         ],
-        news: "News: IllusionCAPTCHA next generation of CAPTCHA system is available now!"
+        news: "News: IllusionCAPTCHA next generation of CAPTCHA system is available now!",
+        demo: "Interactive Demo",
+        loading: "Loading CAPTCHA images...",
+        submit: "Submit",
+        selectMulti: "Please select {n} images and submit",
+        selectSingle: "Please select the correct image and submit",
+        correct: "Congratulations!",
+        correctDesc: "We can now go to the protected pages",
+        incorrect: "Incorrect Answer",
+        incorrectDesc: "Please try again or refresh for a new challenge",
+        clickToLoad: "Click to load CAPTCHA images"
       },
     },
     // Blog Page
@@ -757,7 +767,17 @@ export const translations = {
           "AI驱动的机器人检测"
         ],
         comingSoon: "即将推出：高级CAPTCHA部署、威胁分析仪表板和自动化响应系统",
-        news: "新闻：IllusionCAPTCHA下一代CAPTCHA系统现已可用。立即试用！"
+        news: "新闻：IllusionCAPTCHA下一代CAPTCHA系统现已可用。立即试用！",
+        demo: "交互演示",
+        loading: "正在加载验证码图片...",
+        submit: "提交",
+        selectMulti: "请选择{n}个图片后提交",
+        selectSingle: "选择正确图片后提交",
+        correct: "恭喜你！",
+        correctDesc: "你现在可以访问受保护页面",
+        incorrect: "答案错误",
+        incorrectDesc: "请重试或刷新获取新挑战",
+        clickToLoad: "点击加载验证码图片"
       },
     },
     // Blog Page
