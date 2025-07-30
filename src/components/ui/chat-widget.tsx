@@ -50,8 +50,8 @@ export function ChatWidget() {
     };
   }, []);
 
-  // Always show the chat icon
-  const shouldShowIcon = true;
+  // Show chat icon only when dialog is not open
+  const shouldShowIcon = !isOpen;
 
   const handleSendMessage = () => {
     if (!inputValue.trim()) return;
@@ -108,7 +108,7 @@ export function ChatWidget() {
                 size="sm"
                 onClick={() => {
                   setIsOpen(false);
-                  setIsMinimized(true);
+                  setIsMinimized(false);
                 }}
                 className="text-white hover:bg-white/20 p-1"
               >
@@ -173,7 +173,7 @@ export function ChatWidget() {
         </div>
       )}
 
-      {/* Chat Icon - Always visible when dialog is not open */}
+      {/* Chat Icon - Only visible when dialog is not open */}
       {shouldShowIcon && (
         <div className="absolute bottom-0 right-0">
           <Button
